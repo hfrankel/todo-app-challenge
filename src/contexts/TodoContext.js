@@ -9,7 +9,7 @@ export const TodoStore = (props) => {
   ]);
 
   return (
-    <TodoContext.Provider value={{ todoTasks }}>
+    <TodoContext.Provider value={{ todoTasks, setTodoTasks }}>
       {props.children}
     </TodoContext.Provider>
   );
